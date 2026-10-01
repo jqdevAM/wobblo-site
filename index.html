@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wobblo</title>
+<meta name="description" content="Wobblo — soft cartoon friends that wobble when you tilt, shake or touch your phone, in the app, as a live wallpaper and in a home-screen widget. No permissions, never online, nothing collected.">
+<link rel="icon" href="wobblo.png">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fff8ef;
+    --panel: #ffffff;
+    --ink: #2d2a32;
+    --muted: #6b6572;
+    --line: #eadfd3;
+    --accent: #d63c63;
+    --accent-ink: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1a20;
+      --panel: #26232b;
+      --ink: #f2edf4;
+      --muted: #b6aebe;
+      --line: #3a3540;
+      --accent: #ff8fa8;
+      --accent-ink: #2b1018;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 16px 64px;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 36rem; margin: 0 auto; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 28px; }
+  header img {
+    width: 64px; height: 64px; border-radius: 14px; display: block;
+    box-shadow: 0 2px 10px rgb(0 0 0 / .18);
+  }
+  h1 { font-size: 1.75rem; line-height: 1.2; margin: 0 0 2px; letter-spacing: -.02em; }
+  .tagline { color: var(--muted); margin: 0; }
+  h2 {
+    font-size: .8rem; text-transform: uppercase; letter-spacing: .08em;
+    color: var(--muted); margin: 32px 0 10px; font-weight: 600;
+  }
+  p { margin: 0 0 14px; }
+  .panel {
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: 14px; padding: 18px 20px;
+  }
+  ul { margin: 0; padding: 0; list-style: none; }
+  ul li { padding: 9px 0; border-top: 1px solid var(--line); }
+  ul li:first-child { border-top: 0; padding-top: 0; }
+  ul li:last-child { padding-bottom: 0; }
+  ul strong { display: block; font-weight: 600; }
+  ul span { color: var(--muted); font-size: .94rem; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+  .links a {
+    display: inline-block; padding: 9px 16px; border-radius: 999px;
+    border: 1px solid var(--line); background: var(--panel);
+    text-decoration: none; font-weight: 500;
+  }
+  .links a.primary {
+    background: var(--accent); border-color: var(--accent); color: var(--accent-ink);
+  }
+  footer {
+    margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: .9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <header>
+    <img src="wobblo.png" alt="" width="64" height="64">
+    <div>
+      <h1>Wobblo</h1>
+      <p class="tagline">Soft cartoon friends that wobble — in the app and on your home screen.</p>
+    </div>
+  </header>
+
+  <p>Pick a friend and give them a wobble. Tilt the phone and their cheeks,
+  bellies and googly eyes slosh about; shake it and they jiggle; grab a soft
+  bit with your finger and flick it. The wobble is real physics, and more
+  friends are on the way.</p>
+
+  <h2>What it does</h2>
+  <div class="panel">
+    <ul>
+      <li>
+        <strong>Tilt, shake, poke</strong>
+        <span>Every soft part is a chain of sixteen bodies, simulated as you
+        move the phone, so no two wobbles are the same.</span>
+      </li>
+      <li>
+        <strong>A live wallpaper</strong>
+        <span>Set any friend as your wallpaper right from their screen. It
+        keeps wobbling on your home screen whenever you tilt the phone, and
+        rests when you don't.</span>
+      </li>
+      <li>
+        <strong>A home-screen widget</strong>
+        <span>The friend on your wallpaper, with arrows to switch to another,
+        a heart, and a way into Settings. Shown or hidden from Settings.</span>
+      </li>
+      <li>
+        <strong>Favourites</strong>
+        <span>Give a friend a heart and they come first. The friend on your
+        wallpaper is always at the top.</span>
+      </li>
+      <li>
+        <strong>Your way</strong>
+        <span>Light or dark, English or Russian, or just as your phone is
+        set.</span>
+      </li>
+    </ul>
+  </div>
+
+  <h2>What stays on your device</h2>
+  <div class="panel">
+    <p>Everything. Wobblo asks for no permissions and has no internet
+    access, so it cannot send anything anywhere. There is no account, no
+    advertising, no analytics and no server of ours. It remembers only your
+    choices — which friend is on the wallpaper, your favourites, your
+    settings — on your phone.</p>
+    <div class="links">
+      <a class="primary" href="privacy/">Privacy policy</a>
+      <a href="privacy/#ru">По-русски</a>
+    </div>
+  </div>
+
+  <h2>Languages</h2>
+  <p>English, Русский.</p>
+
+  <footer>
+    Contact: <a href="mailto:amaldavanau@gmail.com">amaldavanau@gmail.com</a>
+  </footer>
+
+</main>
+</body>
+</html>
