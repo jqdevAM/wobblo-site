@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wobblo — Privacy Policy</title>
-<meta name="description" content="Wobblo's privacy policy: no permissions, no internet access, nothing collected. Your choices stay on your phone.">
+<meta name="description" content="Wobblo's privacy policy: your choices stay on your phone; the only thing that goes online is the ad banner, after you are asked.">
 <link rel="icon" href="../wobblo.png">
 <style>
   :root {
@@ -79,16 +79,18 @@
 
 <header>
   <h1>Wobblo — Privacy Policy</h1>
-  <p class="when">Last updated: 1 October 2026</p>
+  <p class="when">Last updated: 2 October 2026</p>
   <nav class="langs"><a href="#en">English</a><a href="#ru">Русский</a> <a href="../">About the app</a></nav>
 </header>
 
 <section id="en">
 
 <div class="lead">
-  <p><strong>Wobblo collects nothing.</strong> It asks for no permissions,
-  has no internet access, and has no account, no advertising and no
-  analytics. The few choices you make in it stay on your phone.</p>
+  <p><strong>Wobblo itself collects nothing.</strong> It has no account and
+  no analytics of its own, and the few choices you make in it stay on your
+  phone. It is free, and paid for by one ad banner at the bottom of the list
+  of wallpapers: the ad network collects what it needs to show it, after the
+  app asks you how (see <a href="#en-ads">Advertising</a>).</p>
 </div>
 
 <p>Wobblo is a toy: soft live wallpapers that wobble when you tilt, shake
@@ -118,9 +120,11 @@ is on screen, the app stops reading the sensor. Android asks for no
 permission for this.</p>
 
 <h2>Network use</h2>
-<p><strong>Wobblo cannot go online.</strong> It does not hold Android's
-internet permission, so it can neither send nor receive anything over a
-network. There is no server of ours.</p>
+<p><strong>Only the ad banner goes online.</strong> The app holds Android's
+internet permission for the advertising library and for nothing else: the
+wallpapers, the wobbling, your favourites and your settings all work with no
+connection, and the app's own code sends nothing anywhere. There is no
+server of ours.</p>
 
 <h2>Backups</h2>
 <p>Like most apps, Wobblo lets Android include the choices listed above in
@@ -128,27 +132,66 @@ your own device backup (to your Google account, and when you move to a new
 phone). They go only to your own backup, and they contain nothing about
 you.</p>
 
-<h2>Advertising, analytics, purchases, accounts</h2>
-<p><strong>There are none.</strong> No ads, no analytics or crash reporting,
-no purchases, and no sign-in.</p>
+<h2 id="en-ads">Advertising</h2>
+<p><strong>The app is free, and advertising is how it is paid for.</strong>
+One banner appears in exactly one place: at the bottom of the list of
+wallpapers. Never over a wallpaper you are playing with, and never on your
+home screen — the live wallpaper and the widget show no ads.</p>
 
-<h2>Permissions on Android</h2>
-<p><strong>Wobblo requests no permissions.</strong> The live wallpaper and the
-home-screen widget are shown by Android itself, and need no permission from
-you.</p>
+<p>The ads are served by the <strong>Yandex Mobile Ads SDK</strong>, which is
+part of the app. To do that it uses your device's <strong>advertising
+ID</strong> and information about the device and its connection, and sends
+those to Yandex's servers. That collection is Yandex's, made under
+<a href="https://yandex.com/legal/confidential/">Yandex's privacy policy</a>
+rather than ours, and it is why the app declares the <code>AD_ID</code>
+permission and the Play install-referrer permission. The SDK brings Yandex's
+analytics library (AppMetrica) with it; the app itself starts no analytics
+and reports nothing about how you use it. Location tracking in the SDK is
+switched off.</p>
+
+<p><strong>What is never sent to an ad network, or anywhere else:</strong>
+which wallpapers you look at, set or favourite, and your settings.</p>
+
+<p><strong>You are asked first.</strong> Before the first ad, the slot where
+it would appear asks whether your advertising ID may be used to choose ads,
+and no ad is requested until you answer. If you allow it, ads are
+personalised with it. If you decline, the app stays free and still shows
+ads — they are simply not chosen that way. You can change the answer at any
+time in <strong>Settings → Advertising → Use my advertising ID</strong>, and
+reset or delete the advertising ID itself in Android's settings, under
+Privacy → Ads.</p>
+
+<h2>Analytics, purchases, accounts</h2>
+<p><strong>There are none of our own.</strong> No analytics or crash
+reporting of our own, no purchases, and no sign-in.</p>
+
+<h2>Permissions on Android, and what each is for</h2>
+<div class="table"><table>
+  <tr><th>Permission</th><th>What for</th></tr>
+  <tr><td>Internet, and network state</td><td>Loading the ad banner. Nothing else in the app goes online.</td></tr>
+  <tr><td>Advertising ID (<code>AD_ID</code>)</td><td>Reading the advertising ID, for the ad network — used to personalise ads only if you allow it</td></tr>
+  <tr><td>Install referrer</td><td>Brought by the advertising library: which campaign, if any, an install came from</td></tr>
+</table></div>
+<p>The live wallpaper and the home-screen widget are shown by Android
+itself, and need no permission from you. The app asks for nothing that
+needs your approval: no location, contacts, camera, microphone or
+storage.</p>
 
 <h2>Deleting your data</h2>
 <ul>
   <li>Uninstalling the app deletes everything it stored.</li>
   <li>Or, without uninstalling: Android Settings → Apps → Wobblo → Storage →
   Clear storage.</li>
+  <li>The advertising ID is reset or deleted in Android's own settings, under
+  Privacy → Ads; data Yandex holds is covered by
+  <a href="https://yandex.com/legal/confidential/">its privacy policy</a>.</li>
 </ul>
 <p>We hold no data about you, so there is nothing for us to delete, export
 or correct on request — but you are welcome to ask.</p>
 
 <h2>Children</h2>
-<p>Wobblo collects no personal information from anyone, children included:
-it has no way to.</p>
+<p>Wobblo itself collects no personal information from anyone, children
+included. It is not made for children under 13.</p>
 
 <h2>Changes</h2>
 <p>If this policy changes, the new version appears on this page with a new
@@ -167,13 +210,15 @@ announced in the app before it took effect.</p>
 
 <header>
   <h1>Wobblo — Политика конфиденциальности</h1>
-  <p class="when">Обновлено: 1 октября 2026 года</p>
+  <p class="when">Обновлено: 2 октября 2026 года</p>
 </header>
 
 <div class="lead">
-  <p><strong>Wobblo ничего не собирает.</strong> Приложение не просит
-  разрешений, не имеет доступа к интернету, в нём нет аккаунта, рекламы и
-  аналитики. Немногие выбранные вами настройки остаются на телефоне.</p>
+  <p><strong>Само Wobblo ничего не собирает.</strong> В нём нет аккаунта и
+  собственной аналитики, а немногие выбранные вами настройки остаются на
+  телефоне. Приложение бесплатное, и его оплачивает один рекламный баннер
+  внизу списка обоев: рекламная сеть собирает то, что нужно для его показа,
+  после того как приложение спросит вас как (см. <a href="#ru-ads">Реклама</a>).</p>
 </div>
 
 <p>Wobblo — это игрушка: мягкие живые обои, которые колышутся, когда вы
@@ -204,9 +249,11 @@ Wobblo для Android.</p>
 датчик. Android не требует для этого разрешения.</p>
 
 <h2>Работа с сетью</h2>
-<p><strong>Wobblo не может выйти в интернет.</strong> У приложения нет
-разрешения Android на доступ к интернету, поэтому оно не может ничего ни
-отправить, ни получить по сети. Нашего сервера не существует.</p>
+<p><strong>В интернет выходит только рекламный баннер.</strong> Разрешение
+Android на доступ к интернету нужно рекламной библиотеке и ничему больше:
+обои, колыхание, избранное и настройки работают без подключения, а
+собственный код приложения ничего никуда не отправляет. Нашего сервера не
+существует.</p>
 
 <h2>Резервные копии</h2>
 <p>Как и большинство приложений, Wobblo позволяет Android включать
@@ -214,26 +261,68 @@ Wobblo для Android.</p>
 Google и при переносе на новый телефон). Они попадают только в вашу копию и
 не содержат ничего о вас.</p>
 
-<h2>Реклама, аналитика, покупки, аккаунты</h2>
-<p><strong>Их нет.</strong> Ни рекламы, ни аналитики и отчётов о сбоях, ни
-покупок, ни входа в аккаунт.</p>
+<h2 id="ru-ads">Реклама</h2>
+<p><strong>Приложение бесплатное, и его оплачивает реклама.</strong> Один
+баннер показывается ровно в одном месте — внизу списка обоев. Никогда поверх
+обоев, с которыми вы играете, и никогда на главном экране: живые обои и
+виджет рекламу не показывают.</p>
 
-<h2>Разрешения на Android</h2>
-<p><strong>Wobblo не запрашивает разрешений.</strong> Живые обои и виджет на
-главном экране показывает сам Android, и им не нужно ваше разрешение.</p>
+<p>Рекламу показывает <strong>Yandex Mobile Ads SDK</strong>, встроенный в
+приложение. Для этого он использует <strong>рекламный идентификатор</strong>
+устройства и сведения об устройстве и подключении и отправляет их на серверы
+Яндекса. Этот сбор ведёт Яндекс по
+<a href="https://yandex.ru/legal/confidential/">своей политике
+конфиденциальности</a>, а не по нашей; поэтому приложение объявляет
+разрешение <code>AD_ID</code> и разрешение Play на источник установки. Вместе
+с SDK приходит библиотека аналитики Яндекса (AppMetrica); само приложение
+аналитику не запускает и ничего не сообщает о том, как вы им пользуетесь.
+Отслеживание местоположения в SDK выключено.</p>
+
+<p><strong>Что никогда не отправляется в рекламную сеть или куда-либо
+ещё:</strong> какие обои вы смотрите, устанавливаете и добавляете в
+избранное, и ваши настройки.</p>
+
+<p><strong>Сначала вас спрашивают.</strong> Перед первым объявлением место
+для него спрашивает, можно ли подбирать рекламу по вашему рекламному
+идентификатору, и ни одно объявление не запрашивается, пока вы не ответите.
+Разрешите — реклама будет подбираться по нему. Откажетесь — приложение
+останется бесплатным и реклама останется, просто подобранная иначе. Ответ
+можно изменить в любой момент: <strong>Настройки → Реклама → Использовать
+рекламный идентификатор</strong>, а сам идентификатор — сбросить или
+удалить в настройках Android, в разделе «Конфиденциальность → Реклама».</p>
+
+<h2>Аналитика, покупки, аккаунты</h2>
+<p><strong>Своих нет.</strong> Ни собственной аналитики и отчётов о сбоях,
+ни покупок, ни входа в аккаунт.</p>
+
+<h2>Разрешения на Android и зачем они</h2>
+<div class="table"><table>
+  <tr><th>Разрешение</th><th>Зачем</th></tr>
+  <tr><td>Интернет и состояние сети</td><td>Загрузка рекламного баннера. Больше ничто в приложении в интернет не выходит.</td></tr>
+  <tr><td>Рекламный идентификатор (<code>AD_ID</code>)</td><td>Чтение рекламного идентификатора для рекламной сети — для подбора рекламы, только если вы разрешили</td></tr>
+  <tr><td>Источник установки</td><td>Добавлено рекламной библиотекой: из какой кампании, если из какой-то, пришла установка</td></tr>
+</table></div>
+<p>Живые обои и виджет на главном экране показывает сам Android, и им не
+нужно ваше разрешение. Приложение не просит ничего, что требует вашего
+согласия: ни местоположения, ни контактов, ни камеры, ни микрофона, ни
+хранилища.</p>
 
 <h2>Удаление данных</h2>
 <ul>
   <li>Удаление приложения стирает всё, что оно сохранило.</li>
   <li>Или, не удаляя: Настройки Android → Приложения → Wobblo → Хранилище →
   Очистить хранилище.</li>
+  <li>Рекламный идентификатор сбрасывается или удаляется в настройках
+  Android, в разделе «Конфиденциальность → Реклама»; данные у Яндекса
+  регулируются <a href="https://yandex.ru/legal/confidential/">его политикой
+  конфиденциальности</a>.</li>
 </ul>
 <p>У нас нет никаких данных о вас, поэтому по запросу нам нечего удалять,
 выгружать или исправлять — но вы всегда можете написать.</p>
 
 <h2>Дети</h2>
-<p>Wobblo не собирает личной информации ни у кого, в том числе у детей: у
-приложения просто нет такой возможности.</p>
+<p>Само Wobblo не собирает личной информации ни у кого, в том числе у
+детей. Приложение не предназначено для детей младше 13 лет.</p>
 
 <h2>Изменения</h2>
 <p>Если политика изменится, новая версия появится на этой странице с новой
